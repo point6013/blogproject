@@ -60,7 +60,7 @@ def detail(request, pk):
     # 获取这篇 post 下的全部评论
     comment_list = post.comment_set.all()
 
-    # 将文章、表单、以及文章下的评论列表作为模板变量传给 detail.html 模板，以便渲染相应数据...。
+    # 将文章、表单、以及文章下的评论列表作为模板变量传给 detail.html 模板，以便渲染相应数据。
     context = {'post': post,
                'form': form,
                'comment_list': comment_list
